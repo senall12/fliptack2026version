@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kegiatan Pembelajaran | FLIPTACK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="card header-belajar">
+    <h2>Kegiatan Pembelajaran</h2>
+    <p class="subtitle">Kegiatan Pembelajaran - Sistem Organ Pernapasan Manusia</p>
+  </div>
+
+  <!-- LKPD -->
+  <div class="card soft">
+    <div class="section-title">
+      <span class="icon">📄</span>
+      <h3>Kegiatan Pembelajaran</h3>
+    </div>
+
+    <div class="heyzine-container portrait">
+     <iframe 
+        src="https://heyzine.com/flip-book/6f71482e48.html"
+        allowfullscreen>
+      </iframe>
+
+    </div>
+  </div>
+
+  <!-- PETUNJUK -->
+  <div class="card info-box">
+    <h3>📝 Petunjuk Pengerjaan</h3>
+    <p>
+      Klik tombol di bawah untuk mengerjakan soal di Google Form.
+      <br><br>
+      👉 Setelah selesai, <strong>kembali lagi ke halaman ini</strong> 
+      untuk melanjutkan pembelajaran.
+    </p>
+  </div>
+
+  <!-- TOMBOL GFORM -->
+  <div class="center">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOl9d9RfdhwX10IdRlwgNuOLSVc36VM1oQVFZ-q_L-9QOfkQ/viewform?usp=publish-editor" target="_blank" class="button big" onclick="showReminder()">
+      📝 Kerjakan Soal (akan terbuka di tab baru)
+    </a>
+  </div>
+
+  <!-- FEEDBACK -->
+  <div class="card selesai-box">
+    <p>
+      Setelah mengerjakan soal, klik tombol di bawah untuk lanjut.
+    </p>
+  </div>
+
+  <!-- NAV -->
+  <div class="nav-buttons">
+    <a href="pertemuan1.html" </a>
+    <a href="kegiatanbelajar1.html" class="button big" onclick="unlocktesformatif()">
+      ✅ Saya sudah mengerjakan ➜
+    </a>
+  </div>
+
+</div>
+
+<!-- POPUP REMINDER -->
+<div id="popupReminder" class="popup">
+  <div class="popup-content">
+    <h3>📌 Perhatian</h3>
+    <p>
+      Google Form akan terbuka di tab baru.
+      <br><br>
+      Jangan lupa kembali ke halaman ini setelah selesai ya 😊
+    </p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+function unlocktesformatif() {
+  localStorage.setItem("in-tesformatif", "open");
+}
+
+function showReminder() {
+  document.getElementById("popupReminder").style.display = "flex";
+}
+
+function closePopup() {
+  document.getElementById("popupReminder").style.display = "none";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 1 | FLIPTACK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="card header-belajar">
+    <h2>🫁 Tugas IPAS Kelas V</h2>
+    <p class="subtitle">Mengamati Perubahan Frekuensi Napas</p>
+  </div>
+
+  <!-- IDENTITAS + INSTRUKSI -->
+  <div class="card soft">
+    <h3>✏️ Tuliskan identitas di buku tulis</h3>
+    <p class="hint">👤 </p>
+
+    <div class="identitas-box">
+      <p>Nama : ........................................</p>
+      <p>Kelas : 5</p>
+      <p>Nama Sekolah : ........................................</p>
+    </div>
+  </div>
+
+  <!-- ALAT DAN BAHAN + INSTRUKSI -->
+  <div class="card soft">
+    <div class="section-title">
+      <span class="icon">🔍</span>
+      <h3>Siapkan alat dan bahan terlebih dahulu </h3>
+    </div>
+
+    <p class="hint">Alat dan Bahan</p>
+
+    <div class="alat-grid">
+      <div class="alat-item">⏱️ Stopwatch / Jam</div>
+      <div class="alat-item">📱 HP / Laptop</div>
+      <div class="alat-item">✏️ Alat Tulis</div>
+      <div class="alat-item">📖 Buku Tulis</div>
+    </div>
+  </div>
+
+  <!-- STEP 1 -->
+  <div class="card soft">
+<p class="step-desc">
+      👉 Lakukan percobaan sesuai langkah di bawah ini secara berurutan.
+    </p>
+    <img src="langkah.png" class="img-tugas">
+    
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="card soft">
+ <p class="step-desc">
+      👉 Catat hasil pengamatanmu di buku tulis.
+    </p>
+    <img src="tabel.png" class="img-tugas">
+   
+  </div>
+
+  <!-- STEP 3 -->
+  <div class="card soft">
+ <p class="step-desc">
+      👉 Jawablah pertanyaan dengan kalimat lengkap dan jelas di buku tulis.
+    </p>
+    <img src="analisis.png" class="img-tugas">
+   
+  </div>
+
+  <!-- PENGUMPULAN -->
+  <div class="card info-box">
+    <h3>📸 Pengumpulan</h3>
+    <p>
+      Foto hasil pekerjaanmu, kemudian upload melalui Google Form.
+    </p>
+  </div>
+
+  <!-- BUTTON -->
+  <div class="center">
+    <a href="LINK_GFORM_TUGAS" target="_blank" class="button big">
+      📤 Upload Hasil Tugas
+    </a>
+  </div>
+
+
+  <!-- NAV -->
+  <div class="nav-buttons">
+    <a href="tesformatif1.html" </a>
+    <a href="refleksi1.html" class="button big" onclick="unlockRefleksi()">
+      ✅ Saya sudah mengumpulkan ➜
+    </a>
+  </div>
+
+</div>
+
+<script>
+function unlockRefleksi() {
+  localStorage.setItem("post-refleksi", "open");
+}
+</script>
+
+</body>
+</html>
